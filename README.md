@@ -1,11 +1,22 @@
-# Music Downloader 🎵
+# 🎵 Music Downloader Limpio
 
-## Descripción
-Este es un script en Python que permite descargar música en **alta calidad** desde YouTube u otras plataformas compatibles con `yt-dlp`. El audio se extrae en formato `.mp3` (o el que configures) y se guarda en la carpeta `downloads`.
+Este script en Python descarga música en **alta calidad** desde YouTube u otras plataformas soportadas por [`yt-dlp`](https://github.com/yt-dlp/yt-dlp), limpia los títulos de palabras innecesarias y convierte el audio al formato que elijas usando FFmpeg.
 
-## Requisitos
-- Python 3.8+
-- FFmpeg instalado en el sistema
-- Librerías Python:
-  ```bash
-  pip install yt-dlp ffmpeg-python
+---
+
+## ✨ Características
+- Descarga el **mejor audio disponible** (`bestaudio/best`).
+- Limpia el título de etiquetas como `(Audio)`, `(Official Video)`, `(Lyrics)`, etc.
+- Conversión automática a formatos como MP3, FLAC o WAV.
+- Configuración sencilla desde `config.py`.
+
+---
+
+## 📦 Requisitos
+- Python 3.8 o superior.
+- [`yt-dlp`](https://github.com/yt-dlp/yt-dlp)
+- [FFmpeg](https://ffmpeg.org/download.html) instalado y en el PATH.
+
+Instalar dependencias desde `requirements.txt`:
+```bash
+pip install -r requirements.txt
